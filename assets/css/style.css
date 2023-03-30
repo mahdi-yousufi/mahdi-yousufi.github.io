@@ -200,8 +200,8 @@ img {
 
 #home {
     background-image: url("../img/png.jpg");
-    background-position: right;
-    background-size: 600px 700px;
+    background-position: 800px 100px;
+    background-size: 400px 520px;
     background-repeat: no-repeat;
     /* padding-right: 800px; */
 }
