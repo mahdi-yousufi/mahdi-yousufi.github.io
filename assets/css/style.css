@@ -88,7 +88,7 @@ h5,
 h6,
 .h6 {
     font-family: 700;
-    color: var(--c-dark);
+    color: var(--c-brand);
 }
 
 a {
@@ -336,10 +336,24 @@ footer h4 {
     color: white;
 }
 
+.arrow {
+    font-size: 25px;
+    color: var(--c-brand);
+}
+
 footer p,
 footer li,
 footer li a {
     color: rgba(255, 255, 255, 0.7);
+}
+
+ul.icon-footer li :hover {
+    padding-right: 10px;
+    transition: 0.5s;
+}
+
+.icon-footer li a:hover i {
+    color: var(--c-dark) !important;
 }
 
 footer ul {
