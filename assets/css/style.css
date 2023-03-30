@@ -49,6 +49,7 @@ body {
     }
 }
 
+
 .section-title {
     max-width: 560px;
     margin: 0 auto 60px auto;
@@ -198,9 +199,11 @@ img {
 }
 
 #home {
-    /* background-image: url("../img/png.jpg"); */
-    background-position: center;
-    background-size: cover;
+    background-image: url("../img/png.jpg");
+    background-position: right;
+    background-size: 600px 700px;
+    background-repeat: no-repeat;
+    /* padding-right: 800px; */
 }
 
 .service-icon {
