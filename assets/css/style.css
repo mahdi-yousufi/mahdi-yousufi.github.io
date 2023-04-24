@@ -10,6 +10,7 @@
     --c-body: #636383;
     --transition: all .6s cubic-bezier(.165, .84, .44, .1);
     --shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+    --secondary: #ff5e14;
 }
 
 body {
@@ -199,11 +200,12 @@ img {
 }
 
 #home {
-    background-image: url("../img/png.jpg");
-    background-position: 800px 100px;
-    background-size: 400px 520px;
+    /* background-image: url("../img/png.jpg"); */
+    /* background-position: 800px 100px; */
+    background-position: center;
+    background-size: contain;
     background-repeat: no-repeat;
-    /* padding-right: 800px; */
+    /* padding-right: 800px;  */
 }
 
 .service-icon {
@@ -330,10 +332,10 @@ img {
 }
 
 /* Footer */
-footer {
+/* footer {
     background-color: var(--c-dark);
     padding-top: 75px;
-}
+} */
 
 footer h4 {
     color: white;
@@ -372,4 +374,101 @@ footer ul {
 .footer-bottom {
     padding-top: 35px;
     padding-bottom: 35px;
+}
+
+/*  */
+.animation-1-1 {
+    width: 110px;
+    height: 4px;
+    background: var(--c-brand);
+    border-radius: 2px;
+    position: relative;
+}
+
+.animation-2-2 {
+    width: 4px;
+    position: absolute;
+    height: 4px;
+    background: white;
+    animation: animation-2-medium-run 5s infinite linear;
+}
+
+@keyframes animation-2-medium-run {
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: 110px;
+    }
+
+    100% {
+        left: 0;
+    }
+}
+
+
+.quick-links span {
+    font-size: 1.3rem;
+}
+
+.icon-footer a {
+    font-size: 1.2rem;
+}
+
+.media a {
+    height: 50px;
+    width: 55px;
+    transition: 1s;
+    background-color: var(--c-brand);
+}
+
+.media a:hover {
+    background-color: var(--c-brand);
+}
+
+.media a:hover i {
+    filter: invert(100%);
+}
+
+.media i {
+    font-size: 20px;
+    transition: 1s;
+}
+
+i.info {
+    color: var(--c-brand);
+    font-size: 1.3rem;
+}
+
+.animation-1-1 {
+    width: 110px;
+    height: 4px;
+    background: var(--c-brand);
+    border-radius: 2px;
+    position: relative;
+}
+
+.animation-2-2 {
+    width: 4px;
+    position: absolute;
+    height: 4px;
+    background: white;
+    animation: animation-2-medium-run 5s infinite linear;
+}
+
+.icon-footer li:hover {
+    padding-right: 10px;
+}
+
+.icon-footer li {
+    transition: 0.5s;
+}
+
+.icon-footer li a:hover i {
+    color: var(--secondary) !important;
+}
+
+.copy-write{
+    background-color: var(--c-brand);
 }
